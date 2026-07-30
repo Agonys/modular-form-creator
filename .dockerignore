@@ -1,0 +1,10 @@
+node_modules
+dist
+storybook-static
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+pnpm-lock.yaml
+.npmrc

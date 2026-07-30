@@ -1,4 +1,19 @@
 services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: modular-form-creator-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_TARGET=http://backend:5001
+    depends_on:
+      - backend
+    command: npm run dev -- --host 0.0.0.0
   backend:
     build: ./backend
     container_name: modular-form-creator-backend

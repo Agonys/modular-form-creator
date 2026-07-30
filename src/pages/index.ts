@@ -1,0 +1,7 @@
+export { BasicInfoPage } from './BasicInfo/BasicInfoPage'
+export { ProjectDetailsPage } from './ProjectDetails/ProjectDetailsPage'
+export { ResourceDetailsPage } from './ResourceDetails/ResourceDetailsPage'
+export { ResourceOverviewPage } from './ResourceOverview/ResourceOverviewPage'
+export { ResourcesListPage } from './ResourcesList/ResourcesListPage'
+export { ResourceLayout } from './ResourceLayout'
+export { ShowcasePage } from './Showcase/ShowcasePage'
