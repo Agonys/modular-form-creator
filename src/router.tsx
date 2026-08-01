@@ -6,7 +6,7 @@ import {
   ResourceDetailsPage,
   BasicInfoPage,
   ProjectDetailsPage,
-  ShowcasePage,
+  NotFoundPage,
 } from './pages'
 
 export function AppRouter() {
@@ -21,7 +21,7 @@ export function AppRouter() {
           <Route path="basic-info" element={<BasicInfoPage />} />
           <Route path="project-details" element={<ProjectDetailsPage />} />
         </Route>
-        <Route path="/showcase" element={<ShowcasePage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   )
